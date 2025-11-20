@@ -3,7 +3,7 @@ import "../GalleryCss/CelebrateSection.css";
 
 import img1 from "../Images/CELEBRATE1.jpg";
 import img2 from "../Images/CELEBRATE2.jpg";
-import img3 from "../Images/Gallery3.png";
+import img3 from "../Images/onamimage.jpg";
 
 const CelebrateSection = () => {
   const fadeRefs = useRef([]);
