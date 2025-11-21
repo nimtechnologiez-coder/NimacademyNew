@@ -1,0 +1,122 @@
+.internship-section {
+  position: relative;
+  /* width: 100%;  <-- remove or keep with border-box */
+  width: 100%;
+  box-sizing: border-box;          /* IMPORTANT – stops width+padding overflow */
+  padding: 60px 8% 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+
+  /* SAME LOOK AS DESIGN: green → blue gradient */
+  background: linear-gradient(
+    120deg,
+    #b5ff3c 0%,
+    #6dfc5a 20%,
+    #00c7ff 55%,
+    #0086d8 100%
+  );
+ background-repeat: no-repeat;
+  background-size: 100% auto;         /* full width, keep aspect ratio */
+  background-position: center 105%;  /* 👈 controls curve height */
+}
+
+/* bottom smooth white curve – no horizontal overflow */
+.internship-section::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -140px;        /* move curve up/down */
+  width: 140%;           /* wider than section so sides are hidden */
+  height: 260px;         /* curve depth */
+  background: #ffffff;
+  border-radius: 60% 50% 0 0;  /* smooth symmetric curve */
+  transform: translateX(-50%);
+}
+
+/* LEFT SIDE – IMAGE + BLUE CIRCLE */
+.internship-left {
+  position: relative;
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1; /* above the curve */
+}
+
+.internship-circle-bg {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 20% 20%, #4dd6ff 0%, #0071ff 70%);
+  top: 10px;
+  left: -100px;
+  
+  margin: 0 auto;
+}
+
+.internship-img {
+  position: relative;
+  max-width: 340px;
+  width: 100%;
+  height: 400px;
+  right: 210px;
+  top: 20px;
+  z-index: 2;
+}
+
+/* RIGHT SIDE – TEXT */
+.internship-right {
+  flex: 1;
+  z-index: 1;
+  color: #000;
+}
+
+.internship-title {
+  font-size: 90px;
+  font-weight: 700;
+  font-family: "Poppins";
+  margin-bottom: 20px;
+}
+
+.internship-text {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.7;
+  max-width: 680px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .internship-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 6% 140px;
+  }
+
+  .internship-left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .internship-title {
+    font-size: 40px;
+  }
+
+  .internship-text {
+    max-width: 100%;
+  }
+  .internship-img {
+  position: relative;
+  max-width: 340px;
+  width: 100%;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+}
+}
+

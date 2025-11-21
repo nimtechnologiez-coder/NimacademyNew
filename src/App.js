@@ -44,6 +44,14 @@ import  WhyChooseNIM from "./courseDh/knowledgechoseus"
 import CategoryDescriptions from "./courseDh/knowledgecategory"
 import PythonCourses from "./courseDh/knowledgecard"
 import FutureSection from "./courseDh/knowledgebuildskill"
+
+
+import InternshipDomains from "./Internshippage/intern";
+import InternshipTopCards from "./Internshippage/interncards";
+import InternshipSection from "./Internshippage/internhero";
+import InternshipDetails from "./Internshippage/internpro";
+import CollaborationSection from "./Internshippage/internship";
+import DomainsSection from "./Internshippage/interntool";
 function App() {
   return (
     <BrowserRouter>
@@ -152,6 +160,26 @@ function App() {
             <CategoryDescriptions/>
           <PythonCourses/>
           <FutureSection/>
+              <Footer />
+            </>
+          }
+        />
+
+
+
+               <Route
+          path="/Intership"
+          element={
+            <>
+            <InternshipSection />
+               <DomainsSection />
+
+
+            <InternshipTopCards /> 
+          
+             
+               <CollaborationSection />
+           
               <Footer />
             </>
           }
