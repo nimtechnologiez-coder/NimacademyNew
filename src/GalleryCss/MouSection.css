@@ -35,10 +35,10 @@ body {
 }
 
 .ribbonss p {
+  font-size: clamp(18px, 3vw, 30px);
+  font-weight: 700;
   margin: 0;
   color: #fff;
-  font-weight: 700;
-  font-size: clamp(18px, 3vw, 30px);
   transform: skewX(12deg);
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 /* ============================
-   SECTION 1 – BENEFITS
+   SECTION 1 — BENEFITS
 ============================ */
 .mou-benefits {
   width: min(88%, 1200px);
@@ -122,6 +122,7 @@ body {
   margin-top: 40px;
   text-align: center;
 }
+
 .main-title span {
   color: #65c13a;
 }
@@ -131,15 +132,16 @@ body {
   font-weight: 700;
   text-align: center;
 }
+
 .sub-title span {
   color: #0057a8;
 }
 
 .desc-text {
   font-size: clamp(14px, 2.5vw, 18px);
-  width: min(92%, 900px);
-  margin: 25px auto 30px;
   line-height: 1.7;
+  width: min(92%, 900px);
+  margin: 25px auto;
   color: #2d2d2d;
   text-align: center;
 }
