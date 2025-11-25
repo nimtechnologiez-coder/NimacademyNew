@@ -1,6 +1,8 @@
 body {
   font-family: "Poppins", sans-serif;
   background: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 /* MAIN WRAPPER */
@@ -10,9 +12,7 @@ body {
   color: #000;
 }
 
-/* ======================================================
-   RIBBON (NOW 100% RESPONSIVE)
-====================================================== */
+/* RIBBON */
 .ribbonss-wrapper {
   width: 100%;
   max-width: 1200px;
@@ -23,7 +23,7 @@ body {
 .ribbonss {
   background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
   padding: clamp(18px, 4vw, 35px) clamp(40px, 12vw, 250px);
-  border-radius: 0px 45px 1px 0px;
+  border-radius: 0 45px 1px 0;
   transform: skewX(-12deg);
 }
 
@@ -39,15 +39,12 @@ body {
   background: #a6ff61;
   height: 10px;
   width: 96%;
-  margin: 0 auto;
+  margin: -2px auto 0;
   border-radius: 5px;
   transform: skewX(-8deg);
-  margin-top: -2px;
 }
 
-/* ======================================================
-   SECTION 1 — MoU BENEFITS
-====================================================== */
+/* SECTION 1 — BENEFITS */
 .mou-benefits {
   width: min(88%, 1200px);
   margin: 60px auto;
@@ -72,9 +69,7 @@ body {
   line-height: 1.5;
 }
 
-/* ======================================================
-   SECTION 2 — FEATURE SECTION
-====================================================== */
+/* SECTION 2 — FEATURE SECTION */
 .feature-section {
   text-align: center;
   margin-top: 25px;
@@ -97,18 +92,16 @@ body {
 .feature-banner {
   width: min(90%, 900px);
   margin: 0 auto 60px;
-  background: linear-gradient(90deg, #B7FB58, #3DAE91, #005F96);
+  background: linear-gradient(90deg, #b7fb58, #3dae91, #005f96);
   padding: clamp(16px, 3vw, 28px);
   border-radius: 55px 20px 55px 20px;
   color: #fff;
   font-size: clamp(18px, 3vw, 28px);
   font-weight: 700;
-  box-shadow: 0 6px 0px #78CF3F;
+  box-shadow: 0 6px 0 #78cf3f;
 }
 
-/* ======================================================
-   SECTION 3 — MoU CARDS
-====================================================== */
+/* SECTION 3 — MOU CARDS */
 .main-title {
   font-size: clamp(24px, 4vw, 36px);
   font-weight: 800;
@@ -125,7 +118,7 @@ body {
   text-align: center;
 }
 .sub-title span {
-  color: #0057A8;
+  color: #0057a8;
 }
 
 .desc-text {
@@ -157,9 +150,7 @@ body {
   border-radius: 10px;
 }
 
-/* ======================================================
-   CARD HOVER
-====================================================== */
+/* HOVER */
 .hover-card {
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
@@ -169,9 +160,7 @@ body {
   box-shadow: 0 12px 45px rgba(164, 255, 104, 0.55);
 }
 
-/* ======================================================
-   ANIMATIONS
-====================================================== */
+/* ANIMATIONS */
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
@@ -180,7 +169,7 @@ body {
 
 .show {
   opacity: 1;
-  transform: translateY(0px);
+  transform: translateY(0);
 }
 
 .delay-1 { transition-delay: 0.1s; }
@@ -192,4 +181,4 @@ body {
 .delay-7 { transition-delay: 0.7s; }
 .delay-8 { transition-delay: 0.8s; }
 .delay-9 { transition-delay: 0.9s; }
-.delay-10 { transition-delay: 1.0s; }
+.delay-10 { transition-delay: 1s; }
