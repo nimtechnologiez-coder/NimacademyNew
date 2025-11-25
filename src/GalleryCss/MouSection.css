@@ -1,6 +1,4 @@
-/* ============================
-   GLOBAL
-============================ */
+
 body {
   font-family: "Poppins", sans-serif;
   background: #ffffff;
@@ -8,18 +6,14 @@ body {
   padding: 0;
 }
 
-/* ============================
-   MAIN WRAPPER
-============================ */
+
 .mou-full-container {
   width: 100%;
   margin: 0 auto;
   color: #000;
 }
 
-/* ============================
-   RIBBON
-============================ */
+
 .ribbonss-wrapper {
   width: 100%;
   max-width: 1200px;
@@ -51,9 +45,7 @@ body {
   transform: skewX(-8deg);
 }
 
-/* ============================
-   SECTION 1 — BENEFITS
-============================ */
+
 .mou-benefits {
   width: min(88%, 1200px);
   margin: 60px auto;
@@ -79,9 +71,7 @@ body {
   line-height: 1.5;
 }
 
-/* ============================
-   FEATURE SECTION
-============================ */
+
 .feature-section {
   text-align: center;
   margin-top: 25px;
@@ -113,9 +103,7 @@ body {
   box-shadow: 0 6px 0 #78cf3f;
 }
 
-/* ============================
-   MOU CARDS
-============================ */
+
 .main-title {
   font-size: clamp(24px, 4vw, 36px);
   font-weight: 800;
@@ -166,9 +154,7 @@ body {
   border-radius: 10px;
 }
 
-/* ============================
-   HOVER EFFECT
-============================ */
+
 .hover-card {
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
@@ -178,9 +164,7 @@ body {
   box-shadow: 0 12px 45px rgba(164, 255, 104, 0.55);
 }
 
-/* ============================
-   ANIMATIONS
-============================ */
+
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
