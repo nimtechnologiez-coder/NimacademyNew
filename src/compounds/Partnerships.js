@@ -3,11 +3,11 @@ import "../Style/Partnerships.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 /* Local images */
-import hex1 from "../Images/hex1.png";
-import hex2 from "../Images/hex2.png";
-import hex3 from "../Images/hex3.png";
-import hex4 from "../Images/hex4.png";
-import hex5 from "../Images/hex5.png";
+import hex1 from "../Images/skill1.png";
+import hex2 from "../Images/skill2.png";
+import hex3 from "../Images/skill3.png";
+import hex4 from "../Images/skill4.png";
+import hex5 from "../Images/skill5.png";
 
 import impactImg from "../Images/impact2.png";
 import impactImg1 from "../Images/impact3.png";
@@ -160,3 +160,4 @@ const Partnerships = () => {
 };
 
 export default Partnerships;
+

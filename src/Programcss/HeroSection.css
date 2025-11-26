@@ -2,7 +2,7 @@
    MAIN BG WRAPPER
 ============================== */
 .program-hero-bg {
-  background: linear-gradient(180deg, #C7FF57 0%, #6AB589 50%, #2B8397 100%);
+  background: linear-gradient(180deg, #b5f65d 0%, #b5f65d 50%, #005587 100%);
   background-size: cover;
   background-position: center;
   padding: 90px 20px 150px;

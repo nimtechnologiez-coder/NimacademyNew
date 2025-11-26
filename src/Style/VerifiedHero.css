@@ -9,7 +9,7 @@
   position: relative;
 
   /* Gradient Top → Bottom */
-  background: linear-gradient(180deg, #c7ff80 0%, #89d9ff 100%);
+  background: linear-gradient(180deg, #b7ff5d, #6bc8ff);
   box-sizing: border-box;
 }
 

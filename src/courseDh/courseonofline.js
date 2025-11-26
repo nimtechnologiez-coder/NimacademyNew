@@ -1,7 +1,7 @@
 import React from "react";
 import "../coursestylestk/courseonofline.css";
 import onlineImg from "../imagestk/onlinegr.png";
-import offlineImg from "../imagestk/oflinegr.png";
+import offlineImg from "../imagestk/oflinegrm.png";
 
 
 

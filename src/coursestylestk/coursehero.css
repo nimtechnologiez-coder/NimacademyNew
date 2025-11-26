@@ -3,18 +3,19 @@
 ================================ */
 .program-hero-wrapper {
   padding: 40px 0 60px;
-  background: #ffffff;
+  
 }
 
 /* ===============================
    MAIN BACKGROUND WITH CURVE
 ================================ */
 .program-hero-bg {
-  background: linear-gradient(180deg, #c7ff57 0%, #6ab589 50%, #2b8397 100%);
+  background: linear-gradient(180deg, #b5f65d 0%, #b5f65d 50%, #005587 100%);
   background-size: cover;
   background-position: center 80%;
   padding: 100px 6% 70px;
   position: relative;
+  
   border-radius: 0 0 20px 60px; /* CURVED BOTTOM */
   overflow: hidden; /* keeps the curve clean */
 }
@@ -27,6 +28,7 @@
 ================================ */
 .hero-container {
   display: flex;
+  
   justify-content: space-between;
   align-items: center;
   max-width: 1250px;
@@ -39,6 +41,7 @@
 ================================ */
 .hero-left {
   flex: 1;
+  
   min-width: 300px;
 }
 
@@ -55,6 +58,7 @@
   font-weight: 500;
   line-height: 1.6;
   max-width: 650px;
+  
   margin-bottom: 25px;
   text-align: justify;
 }
@@ -62,6 +66,7 @@
 .hero-highlight {
   font-size: 26px;
   font-weight: 700;
+  
   margin-bottom: 30px;
 }
 

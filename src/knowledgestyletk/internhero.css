@@ -13,13 +13,8 @@
   overflow: hidden;
 
   /* SAME LOOK AS DESIGN: green → blue gradient */
-  background: linear-gradient(
-    120deg,
-    #b5ff3c 0%,
-    #6dfc5a 20%,
-    #00c7ff 55%,
-    #0086d8 100%
-  );
+    background: linear-gradient(180deg, #b7ff5d, #6bc8ff);
+
  background-repeat: no-repeat;
   background-size: 100% auto;         /* full width, keep aspect ratio */
   background-position: center 105%;  /* 👈 controls curve height */

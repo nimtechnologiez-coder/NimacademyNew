@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
 import "../Style/InternshipIndustries.css";
+import imgAnalytics from "../Images/analytics.png";
+import imgDevops from "../Images/devop.png";
+import imgFullstack from "../Images/fullstacks.png";
+import imgUiux from "../Images/uiui.png";
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -48,41 +53,43 @@ const InternshipIndustries = () => {
       </p>
 
       {/* ICON CIRCLES */}
-      <div className="ii-circle-wrapper">
+     {/* ICON CIRCLES */}
+<div className="ii-circle-wrapper">
 
-        <div className="ii-circle-box ii-fade-right">
-          <div className="ii-circle">
-            <FontAwesomeIcon icon={faChartLine} className="ii-circle-icon" />
-          </div>
-          <h3>Data Analytics & AI</h3>
-          <p>Focus on real-time data challenges.</p>
-        </div>
+  <div className="ii-circle-box ii-fade-right">
+    <div className="ii-circle">
+      <img src={imgAnalytics} alt="Analytics" className="ii-circle-img" />
+    </div>
+    <h3>Data Analytics & AI</h3>
+    <p>Focus on real-time data challenges.</p>
+  </div>
 
-        <div className="ii-circle-box ii-fade-right" style={{ animationDelay: ".2s" }}>
-          <div className="ii-circle">
-            <FontAwesomeIcon icon={faGears} className="ii-circle-icon" />
-          </div>
-          <h3>AWS & DevOps</h3>
-          <p>Learn deployment & cloud automation.</p>
-        </div>
+  <div className="ii-circle-box ii-fade-right" style={{ animationDelay: ".2s" }}>
+    <div className="ii-circle">
+      <img src={imgDevops} alt="DevOps" className="ii-circle-img" />
+    </div>
+    <h3>AWS & DevOps</h3>
+    <p>Learn deployment & cloud automation.</p>
+  </div>
 
-        <div className="ii-circle-box ii-fade-right" style={{ animationDelay: ".4s" }}>
-          <div className="ii-circle">
-            <FontAwesomeIcon icon={faCode} className="ii-circle-icon" />
-          </div>
-          <h3>Full Stack</h3>
-          <p>Hands-on MERN & Python full stack.</p>
-        </div>
+  <div className="ii-circle-box ii-fade-right" style={{ animationDelay: ".4s" }}>
+    <div className="ii-circle">
+      <img src={imgFullstack} alt="FullStack" className="ii-circle-img" />
+    </div>
+    <h3>Full Stack</h3>
+    <p>Hands-on MERN & Python full stack.</p>
+  </div>
 
-        <div className="ii-circle-box ii-fade-right" style={{ animationDelay: ".6s" }}>
-          <div className="ii-circle">
-            <FontAwesomeIcon icon={faDesktop} className="ii-circle-icon" />
-          </div>
-          <h3>UI/UX Design</h3>
-          <p>Design stunning user experiences.</p>
-        </div>
+  <div className="ii-circle-box ii-fade-right" style={{ animationDelay: ".6s" }}>
+    <div className="ii-circle">
+      <img src={imgUiux} alt="UI UX" className="ii-circle-img" />
+    </div>
+    <h3>UI/UX Design</h3>
+    <p>Design stunning user experiences.</p>
+  </div>
 
-      </div>
+</div>
+
 
       {/* INDUSTRIES SECTION */}
       <h1 className="ii-section-title ii-fade-up">
@@ -122,3 +129,6 @@ const InternshipIndustries = () => {
 };
 
 export default InternshipIndustries;
+
+
+

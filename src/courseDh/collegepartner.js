@@ -3,7 +3,7 @@ import "../coursecss/collegepartner.css";
 import img1 from "../Courseimage/col1.png";
 import img2 from "../Courseimage/col2.png";
 import img3 from "../Courseimage/col3.png";
-import img4 from "../Courseimage/col4.png";
+import img4 from "../Courseimage/cols4.png";
 
 const PartnerSection = () => {
   return (

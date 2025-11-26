@@ -1,39 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .journey-container {
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -45,8 +10,9 @@
 .soft-cta {
   font-size: 22px;
   font-weight: 400;
+  
   line-height: 1.5;
-  margin-bottom: 50px;
+  margin-top: 40px;
 }
 
 /* Ribbon container */
@@ -55,10 +21,13 @@
   max-width: 900px;
   margin: 0 auto 60px auto;
   position: relative;
+    margin-top: 60px;
+
 }
 
 /* Actual gradient ribbon */
 .ribbon {
+  
   background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
   padding: 35px 40px;
   border-radius: 0px 45px 1px 0px;
@@ -67,6 +36,7 @@
 
 /* Inner text inside ribbon */
 .ribbon p {
+  
   font-size: 28px;
   color: white;
   font-weight: 600;
@@ -76,6 +46,7 @@
 
 /* The light green shadow base under ribbon */
 .ribbon-shadow {
+  
   background: #a6ff61;
   height: 10px;
   width: 95%;
@@ -86,10 +57,10 @@
 }
 
 /* Main heading */
-.main-heading {
+.main-headings {
   font-size: 40px;
   font-weight: 700;
-  margin-top: 40px;
+margin-top: 90px;
 }
 
 .green {
@@ -102,9 +73,9 @@
 
 /* Paragraph description */
 .description {
-  font-size: 20px;
-  max-width: 900px;
-  margin: 50px auto 0 auto;
+  font-size: 25px;
+  max-width: 1900px;
+  margin: 70px auto 0 auto;
   line-height: 1.9;
   font-weight: 400;
 }

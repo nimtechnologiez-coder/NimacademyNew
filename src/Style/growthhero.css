@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   height: 800px;
-  background: linear-gradient(to bottom, #b7ff5d, #6bc8ff);
+  background: linear-gradient(180deg, #b7ff5d, #6bc8ff);
   padding: 180px 8%;
   box-sizing: border-box;
   overflow: hidden;

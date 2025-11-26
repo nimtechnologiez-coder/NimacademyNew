@@ -128,7 +128,7 @@
 .ii-industry-card {
   width: 240px;
   height: 280px;
-  background: linear-gradient(180deg, #005B8F, #69C34A);
+  background: linear-gradient(180deg, #0598b2, #7cc84e);
   border-radius: 25px;
   padding: 35px 25px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.18);
@@ -168,3 +168,4 @@
   .ii-circle-icon { font-size: 36px; }
   .ii-middle { margin-top: 15px; }
 }
+

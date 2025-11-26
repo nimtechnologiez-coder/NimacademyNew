@@ -54,19 +54,7 @@
   align-items: center;
 }
 
-/* OUTER RING */
-.ct-ring {
-  width: 410px;
-  height: 410px;
-  border-radius: 50%;
-  border: 14px solid #50c878;
-  border-left-color: transparent;
-  border-top-color: transparent;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: rotate(15deg);
-}
+
 
 /* PERSON IMAGE */
 .ct-person-img {

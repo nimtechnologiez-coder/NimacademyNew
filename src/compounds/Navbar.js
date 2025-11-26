@@ -48,12 +48,17 @@ const Navbar = () => {
           <a href="/">Home</a>
 
           {/* DIRECT LINKS (Pages removed) */}
-          <a href="/college">Placement</a>
-          <a href="/Intership">Internship</a>
-          <a href="/Blog">Blog</a>
-          <a href="/Gallery">Gallery</a>
-
           <a href="/course">Course</a>
+
+
+
+
+          <a href="/college">Nim Connect</a>
+          <a href="/Intership">Internship</a>
+          
+          <a href="/Gallery">Gallery</a>
+          <a href="/Blog">Blog</a>
+          
           <a href="/Contact">Contact</a>
         </div>
 

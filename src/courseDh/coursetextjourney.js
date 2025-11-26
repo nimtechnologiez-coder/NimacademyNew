@@ -20,7 +20,7 @@ const JourneyCTA = () => {
       </div>
 
       {/* Heading */}
-      <h1 className="main-heading">
+      <h1 className="main-headings">
         Flexible <span className="green">Learning</span> Modes— Online <span className="blue">or</span> Offline
       </h1>
 
