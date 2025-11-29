@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../coursestylestk/course.css";
-
+import { Link } from "react-router-dom";   // <-- YOU MISSED THIS
 // Images
 import pythonImg from "../imagestk/python.png";
 import javaImg from "../imagestk/java.png";
@@ -59,8 +59,9 @@ const FullStackPage = () => {
             </div>
 
             <div className="card-buttons">
-              <button className="show-btn">Show More</button>
-              <button className="enroll-btn">Enroll</button>
+              <Link to="/program" className="show-btn">Show More</Link>
+              <Link to="/contact" className="enroll-btn">Enroll</Link>
+              
             </div>
           </div>
         </div>
@@ -80,9 +81,8 @@ const FullStackPage = () => {
             </div>
 
             <div className="card-buttons">
-              <button className="show-btn">Show More</button>
-              <button className="enroll-btn">Enroll</button>
-            </div>
+              <Link to="/program" className="show-btn">Show More</Link>
+<Link to="/contact" className="enroll-btn">Enroll</Link>            </div>
           </div>
         </div>
 
@@ -93,7 +93,7 @@ const FullStackPage = () => {
           </div>
 
           <div className="card-body">
-            <p>Create dynamic web experiences with Mongo, Express, React & Node.</p>
+            <p>Create dynamic web experiences with Mongo, Express, React & Node.js Build fast and scalable.</p>
 
             <div className="bottom-info">
               <span className="info-item">⏱️ 230 Hrs</span>
@@ -101,9 +101,8 @@ const FullStackPage = () => {
             </div>
 
             <div className="card-buttons">
-              <button className="show-btn">Show More</button>
-              <button className="enroll-btn">Enroll</button>
-            </div>
+              <Link to="/program" className="show-btn">Show More</Link>
+<Link to="/contact" className="enroll-btn">Enroll</Link>            </div>
           </div>
         </div>
       </div>
@@ -129,9 +128,8 @@ const FullStackPage = () => {
             </div>
 
             <div className="card-buttons">
-              <button className="show-btn">Show More</button>
-              <button className="enroll-btn">Enroll</button>
-            </div>
+              <Link to="/program" className="show-btn">Show More</Link>
+<Link to="/contact" className="enroll-btn">Enroll</Link>            </div>
           </div>
         </div>
 
@@ -150,9 +148,8 @@ const FullStackPage = () => {
             </div>
 
             <div className="card-buttons">
-              <button className="show-btn">Show More</button>
-              <button className="enroll-btn">Enroll</button>
-            </div>
+              <Link to="/program" className="show-btn">Show More</Link>
+<Link to="/contact" className="enroll-btn">Enroll</Link>            </div>
           </div>
         </div>
 
@@ -171,9 +168,8 @@ const FullStackPage = () => {
             </div>
 
             <div className="card-buttons">
-              <button className="show-btn">Show More</button>
-              <button className="enroll-btn">Enroll</button>
-            </div>
+              <Link to="/program" className="show-btn">Show More</Link>
+<Link to="/contact" className="enroll-btn">Enroll</Link>            </div>
           </div>
         </div>
       </div>
@@ -191,7 +187,7 @@ const FullStackPage = () => {
           </div>
 
           <div className="card-body">
-            <p>Learn ML, Python, and AI tools to build intelligent, predictive models.</p>
+            <p>Learn ML, Python, and AI tools to build intelligent, predictive models and apply to business problems.</p>
 
             <div className="bottom-info">
               <span className="info-item">⏱️ 350–400 Hrs</span>
@@ -199,9 +195,8 @@ const FullStackPage = () => {
             </div>
 
             <div className="card-buttons">
-              <button className="show-btn">Show More</button>
-              <button className="enroll-btn">Enroll</button>
-            </div>
+              <Link to="/program" className="show-btn">Show More</Link>
+<Link to="/contact" className="enroll-btn">Enroll</Link>            </div>
           </div>
         </div>
 
@@ -220,9 +215,8 @@ const FullStackPage = () => {
             </div>
 
             <div className="card-buttons">
-              <button className="show-btn">Show More</button>
-              <button className="enroll-btn">Enroll</button>
-            </div>
+              <Link to="/program" className="show-btn">Show More</Link>
+<Link to="/contact" className="enroll-btn">Enroll</Link>            </div>
           </div>
         </div>
 
@@ -241,9 +235,8 @@ const FullStackPage = () => {
             </div>
 
             <div className="card-buttons">
-              <button className="show-btn">Show More</button>
-              <button className="enroll-btn">Enroll</button>
-            </div>
+              <Link to="/program" className="show-btn">Show More</Link>
+<Link to="/contact" className="enroll-btn">Enroll</Link>            </div>
           </div>
         </div>
 
@@ -270,9 +263,8 @@ const FullStackPage = () => {
             </div>
 
             <div className="card-buttons">
-              <button className="show-btn">Show More</button>
-              <button className="enroll-btn">Enroll</button>
-            </div>
+              <Link to="/program" className="show-btn">Show More</Link>
+<Link to="/contact" className="enroll-btn">Enroll</Link>            </div>
           </div>
         </div>
 
@@ -291,9 +283,8 @@ const FullStackPage = () => {
             </div>
 
             <div className="card-buttons">
-              <button className="show-btn">Show More</button>
-              <button className="enroll-btn">Enroll</button>
-            </div>
+              <Link to="/program" className="show-btn">Show More</Link>
+<Link to="/contact" className="enroll-btn">Enroll</Link>            </div>
           </div>
         </div>
 
@@ -312,9 +303,8 @@ const FullStackPage = () => {
             </div>
 
             <div className="card-buttons">
-              <button className="show-btn">Show More</button>
-              <button className="enroll-btn">Enroll</button>
-            </div>
+              <Link to="/program" className="show-btn">Show More</Link>
+<Link to="/contact" className="enroll-btn">Enroll</Link>            </div>
           </div>
         </div>
 

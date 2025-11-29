@@ -46,13 +46,8 @@ const Navbar = () => {
 
         <div className="nav-links">
           <a href="/">Home</a>
-
           {/* DIRECT LINKS (Pages removed) */}
           <a href="/course">Course</a>
-
-
-
-
           <a href="/college">Nim Connect</a>
           <a href="/Intership">Internship</a>
           
@@ -73,14 +68,14 @@ const Navbar = () => {
 
         <div className="overlay-inner">
           <a href="/">Home</a>
-
-          {/* DIRECT LINKS (No dropdown in mobile) */}
-          <a href="/college">Placement</a>
-          <a href="/Intership">Careers</a>
-          <a href="/Blog">Blog</a>
-          <a href="/Gallery">Gallery</a>
-
+          {/* DIRECT LINKS (Pages removed) */}
           <a href="/course">Course</a>
+          <a href="/college">Nim Connect</a>
+          <a href="/Intership">Internship</a>
+          
+          <a href="/Gallery">Gallery</a>
+          <a href="/Blog">Blog</a>
+          
           <a href="/Contact">Contact</a>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "../coursestylestk/coursehero.css";
-
+import { Link } from "react-router-dom";   // <-- YOU MISSED THIS
 import heroImg1 from "../imagestk/herocourse.png";
 import bgHero from "../imagestk/herobg.png";
 
@@ -28,8 +28,8 @@ const ProgramHero = () => {
             <h3 className="hero-highlight">Master the Future in Just 17 Days</h3>
 
             <div className="hero-buttons">
-              <button className="hero-btn">Show More</button>
-              <button className="hero-btn">Contact Us</button>
+              <Link to="/program" className="hero-btn">Show More</Link>
+              <Link to="/contact" className="hero-btn">Contact Us</Link>
             </div>
           </div>
 

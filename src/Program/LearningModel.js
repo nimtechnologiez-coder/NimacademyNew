@@ -141,24 +141,19 @@ const LearningModel = () => {
           marginTop: "60px",
         }}
       >
-        <div
-          style={{
-            display: "inline-block",
-            padding: "22px 48px",
-            fontSize: "32px",
-            fontWeight: "700",
-            fontFamily: "Poppins, sans-serif",
-            color: "#fff",
-            background: "linear-gradient(90deg, #C6FF5E 0%, #0A5C8F 100%)",
-            borderTopRightRadius: "40px",
-            borderBottomRightRadius: "40px",
-            clipPath: "polygon(0 0, 100% 0, 100% 100%, 3% 100%)",
-            boxShadow: "10px 10px 0px #C6FF5E",
-            cursor: "pointer",
-          }}
-        >
-          Enroll & Begin Your Journey
+        
+
+  {/* Ribbon Box */}
+      <div className="ribbonsl-wrapper">
+        <div className="ribbonsl">
+          <p>Enroll & Begin Your Journey</p>
         </div>
+        <div className="ribbonsl-shadow"></div>
+      </div>
+
+
+
+
       </div>
     </div>
   );

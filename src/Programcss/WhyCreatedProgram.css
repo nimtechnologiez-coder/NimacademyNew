@@ -1,21 +1,17 @@
-/* ===============================  
-    WRAPPER  
-================================ */
+/* WRAPPER */
 .why-wrapper {
   width: 100%;
   padding: 70px 5%;
-  background: #fff;
+    text-align: center;   /* <-- THIS CENTERS THE HEADING */
+
   font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
 }
 
-/* ===============================  
-    HEADING  
-================================ */
+/* HEADING */
 .why-heading {
   font-size: clamp(28px, 4vw, 46px);
   font-weight: 800;
-  margin-bottom: 40px;
+  margin-bottom: 40px;  
   padding: 12px 35px;
   display: inline-block;
   border-radius: 10px;
@@ -23,124 +19,61 @@
   color: #fff;
 }
 
-/* ===============================  
-    CONTENT ROW  
-================================ */
+/* CONTENT */
 .why-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+  justify-content: center;
   flex-wrap: wrap;
+   
 }
 
-/* ===============================  
-    LEFT TEXT  
-================================ */
+/* TEXT */
 .why-text {
-  flex: 1 1 500px;
+  flex: 1 1 700px;
+   max-width: 1500px;
+width: 500px;
 }
 
 .why-text p {
-  font-size: clamp(18px, 2.2vw, 26px);
+  font-size: clamp(16px, 1.8vw, 22px);
   line-height: 1.7;
   font-weight: 500;
   color: #000;
-  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-/* ===============================  
-    RIGHT CIRCLE IMAGE  
-================================ */
-.why-circle {
-  flex: 1 1 400px;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-
-}
-
-
-
-.why-circle img {
-  width: 89%;
-  z-index: 2;
-}
-/* ---------------------------------- */
-/* ANIMATION CLASSES                 */
-/* ---------------------------------- */
-
-/* Fade Up */
+/* ANIMATIONS */
 .fade-up {
   opacity: 0;
   transform: translateY(40px);
-  transition: all 0.8s ease-out;
+  transition: all 0.9s ease-out;
 }
-
 .fade-up.show {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Fade Right */
-.fade-right {
-  opacity: 0;
-  transform: translateX(60px);
-  transition: all 0.9s ease-out;
-}
-
-.fade-right.show {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-
-/* ===============================  
-    RESPONSIVE FIXES  
-================================ */
+/* RESPONSIVE */
 
 /* Tablet */
-@media (max-width: 992px) {
-  .why-content {
-    gap: 40px;
-  }
-  .why-circle {
-    width: 380px;
-    height: 380px;
+@media (max-width: 1024px) {
+  .why-text p {
+    font-size: 20px;
   }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .why-content {
-   
-    text-align: center;
-  }
-
   .why-text p {
-    text-align: left;
-  }
-
-  .why-circle {
-    width: 320px;
-    height: 320px;
+    text-align: center;
   }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
-  .why-circle {
-    width: 260px;
-    height: 260px;
-  }
-
   .why-text p {
-    font-size: 17px;
+    font-size: 16px;
   }
 }

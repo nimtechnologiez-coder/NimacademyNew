@@ -47,6 +47,42 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* Ribbon container */
+.ribbonsl-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  position: relative;
+  margin-top: 100px;
+}
+
+/* Actual gradient ribbon */
+.ribbonsl {
+  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
+  padding: 45px 250px;
+  border-radius: 0px 45px 1px 0px;
+  transform: skewX(-18deg);
+}
+
+/* Inner text inside ribbon */
+.ribbonsl p {
+  font-size: 28px;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+  transform: skewX(6deg); /* cancel skew for text */
+}
+
+/* The light green shadow base under ribbon */
+.ribbonsl-shadow {
+  background: #a6ff61;
+  height: 10px;
+  width: 96%;
+  margin: 0 auto;
+  border-radius: 5px;
+  transform: skewX(-6deg);
+  margin-top: -0px;
+}
 /* -------------------------------------- */
 /* MAIN LAYOUT                            */
 /* -------------------------------------- */

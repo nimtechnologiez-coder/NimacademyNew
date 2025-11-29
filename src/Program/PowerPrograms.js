@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../Programcss/PowerPrograms.css";
+import { Link } from "react-router-dom";   // <-- YOU MISSED THIS
+
 
 /* ==== LOCAL IMAGES ==== */
 import genAI from "../Images/Generative.png";
@@ -127,14 +129,7 @@ const CourseCards = () => {
                   <p className="cc-desc">{item.desc}</p>
 
                   {/* UPDATED BUTTON → CLICKABLE LINK */}
-                  <a
-                    href="#"
-                    className="cc-btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Enroll Now
-                  </a>
+                 <Link to="/contact" className="enroll-btn">Enroll</Link> 
                 </div>
 
               </div>
