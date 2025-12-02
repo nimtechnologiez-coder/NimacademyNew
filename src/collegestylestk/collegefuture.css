@@ -183,9 +183,10 @@
 
 @media (max-width: 599px) {
  .future-header {
-  width: 400px;
+  width: 390px;
+  margin-left: 10px;
   background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
-  padding: 28px 55px;
+  padding: 22px 55px;
   border-radius: 0px 25px 0px 0px;
   transform: skewX(-12deg);
   margin-bottom: 6px;
@@ -225,6 +226,72 @@
   background: #a6ff61;
   height: 12px;
   width: 93%;
+  border-radius: 4px;
+  transform: skewX(-12deg);
+  margin-top: -6px;
+}
+}
+
+
+@media (max-width: 320px) {
+  .future-left p {
+    font-size: 18px;
+  }
+
+  .future-icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .future-header p {
+    font-size: 20px;
+  }
+  .future-header {
+  width: 270px;
+  margin-left: 30px;
+  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
+  padding: 12px 45px;
+  border-radius: 0px 25px 0px 0px;
+  transform: skewX(-12deg);
+  margin-bottom: 6px;
+}
+.future-shadow {
+  background: #a6ff61;
+  height: 12px;
+  width: 290px;
+  border-radius: 4px;
+  transform: skewX(-12deg);
+  margin-top: -6px;
+}
+}
+
+
+@media (max-width: 400px) {
+  .future-left p {
+    font-size: 18px;
+  }
+
+  .future-icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .future-header p {
+    font-size: 20px;
+  }
+  .future-header {
+  width: 270px;
+  margin-left: 40px;
+  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
+  padding: 12px 45px;
+  border-radius: 0px 25px 0px 0px;
+  transform: skewX(-12deg);
+  margin-bottom: 6px;
+}
+.future-shadow {
+  background: #a6ff61;
+  height: 12px;
+  width: 300px;
   border-radius: 4px;
   transform: skewX(-12deg);
   margin-top: -6px;

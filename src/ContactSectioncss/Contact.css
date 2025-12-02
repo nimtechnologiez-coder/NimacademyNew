@@ -471,3 +471,260 @@ html, body {
     width: 100%;
   }
 }
+
+
+/* ==========================================
+   BASE STYLES (MOBILE → DESKTOP FOUNDATION)
+========================================== */
+
+.ribbonsf-wrapper {
+  width: 100%;
+  max-width: 1400px;   /* increased for desktop */
+  margin: 80px auto 60px auto;
+  padding: 0 clamp(16px, 3vw, 40px);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.ribbonsf {
+  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
+  padding: clamp(14px, 2.5vw, 35px) clamp(20px, 8vw, 240px);
+  border-radius: 0px 45px 1px 0px;
+  transform: skewX(-16deg);
+  display: inline-block;
+  max-width: 100%;
+}
+
+.ribbonsf p {
+  font-size: clamp(18px, 3vw, 38px);
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  transform: skewX(16deg); /* counter skew */
+  white-space: nowrap;
+}
+
+.ribbonsf-shadow {
+  background: #a6ff61;
+  height: 8px;
+  width: 90%;
+  margin: 6px auto 0;
+  border-radius: 5px;
+  transform: skewX(-6deg);
+}
+
+/* ==========================================
+   TABLET VIEW 768px
+========================================== */
+@media (max-width: 768px) {
+
+  .ribbonsf {
+    padding: 16px 40px;
+    border-radius: 0px 30px 0 0;
+    transform: skewX(-12deg);
+  }
+
+  .ribbonsf p {
+    font-size: clamp(16px, 4vw, 26px);
+    transform: skewX(12deg);
+  }
+
+  .ribbonsf-shadow {
+    width: 97%;
+    height: 8px;
+        margin-top: -1px;
+
+  }
+}
+
+/* ==========================================
+   MOBILE 480px
+========================================== */
+@media (max-width: 480px) {
+
+  .ribbonsf {
+    padding: 14px 20px;
+    text-align: center;
+    border-radius: 0 22px 0 0;
+    transform: skewX(-10deg);
+  }
+
+  .ribbonsf p {
+    font-size: clamp(13px, 5vw, 22px);
+    white-space: normal;
+    line-height: 1.4;
+    transform: skewX(10deg);
+  }
+
+  .ribbonsf-shadow {
+    width: 92%;
+    height: 6px;
+        margin-top: -1px;
+
+  }
+}
+
+/* ==========================================
+   SMALL DEVICES 360px
+========================================== */
+@media (max-width: 360px) {
+
+  .ribbonsf {
+    padding: 12px 16px;
+  }
+
+  .ribbonsf p {
+    font-size: 14px;
+  }
+
+  .ribbonsf-shadow {
+    width: 70%;
+    
+  }
+}
+
+/* ==========================================
+   VERY SMALL 320px
+========================================== */
+@media (max-width: 320px) {
+
+  .ribbonsf {
+    padding: 10px 14px;
+  }
+
+  .ribbonsf p {
+    font-size: 12px;
+  }
+
+  .ribbonsf-shadow {
+    width: 95%;
+        margin-top: -1px;
+
+  }
+}
+
+
+/* ==========================================
+   LAPTOP SMALL (1024px - 1366px)
+========================================== */
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+  .ribbonsf {
+    padding: clamp(18px, 2vw, 40px) clamp(40px, 6vw, 240px);
+    transform: skewX(-12deg);
+  }
+
+  .ribbonsf p {
+    font-size: clamp(20px, 2.2vw, 34px);
+    transform: skewX(12deg);
+  }
+
+  .ribbonsf-shadow {
+    width: 90%;
+    height: 8px;
+  }
+}
+
+
+/* ==========================================
+   LAPTOP LARGE (1366px - 1600px)
+========================================== */
+@media (min-width: 1366px) and (max-width: 1600px) {
+
+  .ribbonsf {
+    padding: clamp(22px, 1.8vw, 48px) clamp(60px, 11vw, 300px);
+    transform: skewX(-10deg);
+  }
+
+  .ribbonsf p {
+    font-size: clamp(22px, 2vw, 38px);
+    transform: skewX(10deg);
+  }
+
+  .ribbonsf-shadow {
+    width: 85%;
+    margin-top: -1px;
+    height: 9px;
+  }
+}
+
+
+/* ==========================================
+   DESKTOP (1600px - 2000px)
+========================================== */
+@media (min-width: 1600px) and (max-width: 2000px) {
+
+  .ribbonsf-wrapper {
+    max-width: 1800px;
+  }
+
+  .ribbonsf {
+    padding: clamp(26px, 1.6vw, 58px) clamp(80px, 4vw, 360px);
+    transform: skewX(-10deg);
+  }
+
+  .ribbonsf p {
+    font-size: clamp(26px, 1.6vw, 44px);
+    transform: skewX(10deg);
+  }
+
+  .ribbonsf-shadow {
+    width: 85%;
+    height: 10px;
+  }
+}
+
+
+/* ==========================================
+   ULTRAWIDE DESKTOP (2000px - 2560px)
+========================================== */
+@media (min-width: 2000px) {
+
+  .ribbonsf-wrapper {
+    max-width: 2200px;
+  }
+
+  .ribbonsf {
+    padding: clamp(30px, 1.2vw, 70px) clamp(100px, 3vw, 480px);
+    transform: skewX(-8deg);
+  }
+
+  .ribbonsf p {
+    font-size: clamp(30px, 1.4vw, 52px);
+    transform: skewX(8deg);
+  }
+
+  .ribbonsf-shadow {
+    width: 80%;
+    height: 12px;
+  }
+}
+
+
+/* ==========================================
+   EXACT 1024px VIEWPORT RESPONSIVE
+========================================== */
+@media (min-width: 1024px) and (max-width: 1024px) {
+
+  .ribbonsf-wrapper {
+    max-width: 1100px;
+    padding: 0 20px;
+  }
+
+  .ribbonsf {
+    padding: 22px 140px;
+    transform: skewX(-12deg);
+  }
+
+  .ribbonsf p {
+    font-size: 26px;
+    transform: skewX(12deg);
+  }
+
+  .ribbonsf-shadow {
+    width: 88%;
+    height: 8px;
+        margin-top: -1px;
+
+  }
+}

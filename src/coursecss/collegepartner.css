@@ -198,3 +198,205 @@
     border-radius: 15px;
   }
 }
+
+
+
+/* =======================================================
+   DESKTOP LARGE (1440px–1600px)
+======================================================= */
+@media (min-width: 1440px) and (max-width: 1600px) {
+  .partner-row {
+    gap: 160px;
+  }
+  .partner-text {
+    font-size: 54px;
+  }
+  .partner-text h3 {
+    font-size: 36px;
+  }
+}
+
+/* =======================================================
+   NORMAL DESKTOP (1200px–1440px)
+======================================================= */
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .partner-row {
+    gap: 140px;
+  }
+  .partner-text {
+    font-size: 48px;
+  }
+  .partner-text h3 {
+    font-size: 34px;
+  }
+}
+
+/* =======================================================
+   LAPTOP (992px–1200px)
+======================================================= */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .partner-row {
+    gap: 100px;
+  }
+  .partner-text {
+    font-size: 42px;
+  }
+  .partner-text h3 {
+    font-size: 30px;
+  }
+  .partner-text p {
+    font-size: 18px;
+    max-width: 420px;
+  }
+}
+
+/* =======================================================
+   TABLET LANDSCAPE (768px–992px)
+======================================================= */
+@media (max-width: 992px) {
+  .partner-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .partner-row.reverse {
+    flex-direction: column; /* fix reverse issue */
+  }
+
+  .partner-text {
+    text-align: center;
+    font-size: 38px;
+  }
+
+  .partner-text h3 {
+    font-size: 28px;
+  }
+
+  .partner-text p {
+    font-size: 18px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .partner-img {
+    max-width: 380px;
+    padding: 0;
+  }
+}
+
+/* =======================================================
+   TABLET PORTRAIT (600px–768px)
+======================================================= */
+@media (max-width: 768px) {
+  .partner-title {
+    font-size: 40px;
+  }
+
+  .partner-text {
+    font-size: 34px;
+  }
+
+  .partner-text h3 {
+    font-size: 26px;
+  }
+
+  .partner-text p {
+    font-size: 17px;
+  }
+
+  .partner-img {
+    max-width: 330px;
+  }
+}
+
+/* =======================================================
+   MOBILE (480px–600px)
+======================================================= */
+@media (max-width: 600px) {
+  .partner-title {
+    font-size: 32px;
+  }
+
+  .partner-text {
+    font-size: 30px;
+  }
+
+  .partner-text h3 {
+    font-size: 22px;
+  }
+
+  .partner-text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .partner-img {
+    max-width: 300px;
+    padding: 0;
+  }
+}
+
+/* =======================================================
+   SMALL MOBILE (480px ↓)
+======================================================= */
+@media (max-width: 480px) {
+  .partner-title {
+    font-size: 28px;
+  }
+
+  .partner-text {
+    font-size: 26px;
+  }
+
+  .partner-text h3 {
+    font-size: 20px;
+  }
+
+  .partner-text p {
+    font-size: 15px;
+    max-width: 90%;
+  }
+
+  .partner-img {
+    max-width: 260px;
+  }
+
+  .partner-img img {
+    border-radius: 12px;
+  }
+}
+
+/* =======================================================
+   EXTRA SMALL (375px ↓)
+======================================================= */
+@media (max-width: 375px) {
+  .partner-text {
+    font-size: 24px;
+  }
+  .partner-text h3 {
+    font-size: 18px;
+  }
+  .partner-img {
+    max-width: 230px;
+  }
+}
+
+/* =======================================================
+   TINY DEVICES (320px ↓)
+======================================================= */
+@media (max-width: 320px) {
+  .partner-text {
+    font-size: 22px;
+  }
+  .partner-text h3 {
+    font-size: 16px;
+  }
+  .partner-text p {
+    font-size: 14px;
+  }
+  .partner-img {
+    max-width: 200px;
+  }
+}
+

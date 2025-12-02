@@ -202,3 +202,205 @@ body {
 .delay-8 { transition-delay: 0.8s; }
 .delay-9 { transition-delay: 0.9s; }
 .delay-10 { transition-delay: 1s; }
+
+
+
+
+
+/* ============================
+   RESPONSIVE — MOBILE FIRST
+============================ */
+
+/* MOBILE — 320px to 480px */
+@media (max-width: 480px) {
+
+  .ribbonss-wrapper {
+    width: 100%;
+    margin: 60px auto 40px;
+    padding: 0 12px;
+  }
+
+  .ribbonss {
+    padding: 18px 20px;
+    transform: skewX(-8deg);
+    text-align: center;
+  }
+
+  .ribbonss p {
+    white-space: normal;
+    font-size: 16px;
+    line-height: 1.4;
+    transform: skewX(8deg);
+  }
+
+  .ribbonss-shadow {
+    width: 96%;
+    height: 6px;
+  }
+
+  .mou-benefits,
+  .feature-subtext,
+  .feature-banner,
+  .desc-text {
+    width: 95%;
+  }
+}
+
+/* ============================
+   TABLET — 600px to 768px
+============================ */
+@media (min-width: 600px) and (max-width: 768px) {
+
+  .ribbonss-wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .ribbonss {
+    padding: 20px 50px;
+    transform: skewX(-10deg);
+  }
+
+  .ribbonss p {
+    font-size: 20px;
+    transform: skewX(10deg);
+  }
+
+  .feature-banner {
+    font-size: 20px;
+  }
+   .ribbonss-shadow {
+    width: 98%;
+    height: 6px;
+  }
+}
+
+/* ============================
+   TABLET LARGE — 768px to 992px
+============================ */
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .ribbonss-wrapper {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .ribbonss {
+    padding: 25px 90px;
+  }
+
+  .ribbonss p {
+    font-size: 22px;
+  }
+
+  .mou-image {
+    height: 260px;
+  }
+}
+
+/* ============================
+   LAPTOP SMALL — 1024px width
+============================ */
+@media (min-width: 1024px) and (max-width: 1100px) {
+
+  .ribbonss-wrapper {
+    max-width: 900px;
+  }
+
+  .ribbonss {
+    padding: 28px 120px;
+    transform: skewX(-12deg);
+  }
+
+  .ribbonss p {
+    font-size: 24px;
+    transform: skewX(12deg);
+  }
+
+  .ribbonss-shadow {
+    width: 98%;
+    height: 8px;
+  }
+}
+
+/* ============================
+   LAPTOP MEDIUM — 1280px width
+============================ */
+@media (min-width: 1200px) and (max-width: 1366px) {
+
+  .ribbonss-wrapper {
+    max-width: 1100px;
+  }
+
+  .ribbonss {
+    padding: 30px 140px;
+  }
+
+  .ribbonss p {
+    font-size: 26px;
+  }
+}
+
+/* ============================
+   LAPTOP LARGE — 1366px to 1600px
+============================ */
+@media (min-width: 1366px) and (max-width: 1600px) {
+
+  .ribbonss-wrapper {
+    max-width: 1300px;
+  }
+
+  .ribbonss {
+    padding: 32px 180px;
+    transform: skewX(-10deg);
+  }
+
+  .ribbonss p {
+    font-size: 28px;
+    transform: skewX(10deg);
+  }
+}
+
+/* ============================
+   DESKTOP — 1600px to 1920px
+============================ */
+@media (min-width: 1600px) and (max-width: 1920px) {
+
+  .ribbonss-wrapper {
+    max-width: 1500px;
+  }
+
+  .ribbonss {
+    padding: 36px 220px;
+  }
+
+  .ribbonss p {
+    font-size: 32px;
+  }
+
+  .ribbonss-shadow {
+    width: 90%;
+  }
+}
+
+/* ============================
+   ULTRA-WIDE — 1920px to 2560px
+============================ */
+@media (min-width: 1920px) {
+
+  .ribbonss-wrapper {
+    max-width: 1700px;
+  }
+
+  .ribbonss {
+    padding: 40px 260px;
+  }
+
+  .ribbonss p {
+    font-size: 34px;
+  }
+
+  .ribbonss-shadow {
+    width: 88%;
+  }
+}

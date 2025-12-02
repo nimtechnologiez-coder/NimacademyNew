@@ -96,15 +96,16 @@ body {
 ========================================================== */
 .caption-bar {
   background: #fff;
-  font-size: 20px;
+  font-size: clamp(16px, 2.5vw, 22px);
   font-weight: 700;
-  padding: 18px;
+  padding: clamp(12px, 2vw, 20px);
+  width: min(99%, 1090px);   /* Fully responsive */
+  margin: -8px auto 0;      /* Centered for all devices */
   border-radius: 0 0 20px 20px;
-   margin-left: 210px;
-  margin-right: 210px;
-  margin-top: -8px;
   box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+  text-align: center;
 }
+
 
 /* ==========================================================
    FADE-UP ANIMATION + STAGGER
@@ -154,6 +155,7 @@ body {
   }
   .caption-bar {
     font-size: 18px;
+    
   }
   .img-card {
     width: 48%;
@@ -175,6 +177,7 @@ body {
   }
   .caption-bar {
     font-size: 16px;
+    
   }
   .top-text {
     font-size: 16px;
@@ -188,6 +191,7 @@ body {
   }
   .caption-bar {
     font-size: 15px;
+    
   }
   .img-card {
     width: 90%;
@@ -215,6 +219,7 @@ body {
     gap: 10px;
     padding: 0 10px;
   }
+  
 }
 
 /* SMALL PHONES: 375px */
@@ -237,6 +242,7 @@ body {
     gap: 12px;
     padding: 0 12px;
   }
+  
 }
 
 /* MEDIUM PHONES: 425px */
@@ -258,5 +264,75 @@ body {
   .image-row {
     gap: 15px;
     padding: 0 15px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .caption-bar {
+    width: 90%;
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .caption-bar {
+    width: 89%;
+    font-size: 17px;
+    padding: 14px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .caption-bar {
+    width: 88%;
+    font-size: 16px;
+    padding: 13px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .caption-bar {
+    width: 88%;
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .caption-bar {
+    width: 86%;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .caption-bar {
+    width: 86%;
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+
+
+/* ==========================================
+   EXACT 1024px WIDTH RESPONSIVE
+   (Works for 1024 × 600, 1024 × 768, 1024 × 868, 1024 × 1024)
+========================================== */
+@media (min-width: 1024px) and (max-width: 1024px) {
+
+  .caption-bar {
+    width: 90%;                    /* Slightly smaller to avoid overflow */
+    font-size: 20px;               /* Tuning for 1024px */
+    padding: 16px;                 /* Balanced padding */
+    border-radius: 0 0 18px 18px;  /* Slightly smaller radius */
+    box-shadow: 0 3px 14px rgba(0,0,0,0.15);
   }
 }
