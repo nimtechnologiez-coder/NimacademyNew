@@ -162,8 +162,8 @@
 
   .campus-girl-img {
     width: 100%;
-    max-width: 280px;
-    margin-top: 40px;
+    max-width: 380px;
+    margin-top: -130px;
   }
 }
 
@@ -194,15 +194,17 @@
   }
 
   .campus-empower-title {
-    font-size: 1.2rem;
-    padding-top: 80px;
+    font-size: 1.20rem;
+    margin-top: 90px;   /* move image UP */
   }
 
   .campus-empower-desc {
     font-size: 0.82rem;
   }
   .campus-girl-img {
-    max-width: 210px;
+    max-width: 300px;
+    margin-top: -200px;   /* move image UP */
+
   }
 }
 
@@ -210,32 +212,46 @@
    MINI DEVICES (360px)
 =============================== */
 @media (max-width: 360px) {
+
   .campus-empower-title {
     font-size: 1.05rem;
+    margin-top: 15px;   /* move text UP */
   }
 
   .campus-empower-desc {
     font-size: 0.78rem;
+    margin-top: -10px;   /* move paragraph UP */
+    margin-bottom: 10px; /* reduce bottom gap */
   }
 
   .campus-girl-img {
     max-width: 190px;
+    margin-top: -20px;   /* move image UP */
   }
 }
+
+
 
 /* ===============================
    VERY SMALL (320px)
 =============================== */
 @media (max-width: 320px) {
+
   .campus-empower-title {
     font-size: 0.95rem;
+    margin-top: -20px; /* move title UP */
   }
 
   .campus-empower-desc {
-    font-size: 0.74rem;
+    font-size: 0.94rem;
+    margin-top: 30px; /* move description UP */
+    margin-bottom: 40px; /* reduce gap below */
   }
 
-  .campus-girl-img {
-    max-width: 170px;
-  }
+.campus-girl-img {
+  max-width: 230px;
+  margin-bottom: 50px; /* keep if needed */
+  margin-top: -80px;   /* moves the girl UP */
 }
+}
+
