@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../Programcss/PowerPrograms.css";
-import { Link } from "react-router-dom";   // <-- YOU MISSED THIS
-
+import { Link } from "react-router-dom";
 
 /* ==== LOCAL IMAGES ==== */
 import genAI from "../Images/Generative.png";
@@ -17,7 +16,7 @@ import datascience from "../Images/Powerbi.png";
 import testing from "../Images/Excel.png";
 
 const CourseCards = () => {
-  
+
   /* ===================== ANIMATION STATE + REFS ===================== */
   const barsRef = useRef(null);
   const titleRef = useRef(null);
@@ -39,9 +38,10 @@ const CourseCards = () => {
 
           setAnimate((prev) => ({
             ...prev,
-            [key]: key === "cards"
-              ? { ...prev.cards, [entry.target.dataset.index]: true }
-              : true,
+            [key]:
+              key === "cards"
+                ? { ...prev.cards, [entry.target.dataset.index]: true }
+                : true,
           }));
         });
       },
@@ -69,35 +69,37 @@ const CourseCards = () => {
     return () => observer.disconnect();
   }, []);
 
-  /* ===================== ALL CARDS DATA ===================== */
+  /* ===================== CARDS DATA ===================== */
   const cards = [
     { title: "Generative AI", img: genAI, desc: "Learn to build real-world projects using Generative AI tools & workflows that boost creativity and automation." },
     { title: "AI & ML", img: aiMl, desc: "Gain hands-on experience in Machine Learning, AI models & data prediction to build intelligent data-driven solutions." },
-    { title: "Internet Of Things (IOT)", img: iotImg, desc: "Explore the Internet of Things, sensors & smart devices to create connected, intelligent systems for real-world applications." },
-    { title: "DevOps", img: devopsImg, desc: "Learn Automation, CI/CD, and Cloud Deployments to streamline workflows and deliver scalable, efficient applications." },
-    { title: "AI + Python", img: cloud, desc: "Build a strong Python foundation and apply it to real-world AI projects for a hands-on learning experience." },
-    { title: "AI + SaaS", img: cybersecurity, desc: "Gain hands-on experience in Machine Learning, AI models & data prediction to build intelligent, data-driven solutions." },
-    { title: "AI + App Development", img: fulstack, desc: "Learn to create AI-powered mobile apps that combine intelligent features with seamless user experiences." },
-    { title: "Digital Marketing", img: blockchain, desc: "Master performance optimization, SEO, and social media strategy to boost visibility and engagement." },
-    { title: "Power BI", img: datascience, desc: "Learn to design data visualizations and business dashboards that turn complex data into clear, actionable insights." },
-    { title: "Excel Mastery", img: testing, desc: "Master user automation, dashboards, and data analysis to simplify workflows and make smarter business decisions." },
+    { title: "Internet Of Things (IOT)", img: iotImg, desc: "Explore IoT, sensors & smart devices to create connected, intelligent systems." },
+    { title: "DevOps", img: devopsImg, desc: "Learn CI/CD, automation, and deployments to deliver scalable applications." },
+    { title: "AI + Python", img: cloud, desc: "Build a strong Python foundation and apply it to real-world AI projects." },
+    { title: "AI + SaaS", img: cybersecurity, desc: "Learn AI-powered SaaS automation and data-driven business workflows." },
+    { title: "AI + App Development", img: fulstack, desc: "Create AI-powered mobile apps with intelligent features and smooth UX." },
+    { title: "Digital Marketing", img: blockchain, desc: "Master SEO, performance marketing, and social media strategy." },
+    { title: "Power BI", img: datascience, desc: "Create dashboards & visualizations that turn data into insights." },
+    { title: "Excel Mastery", img: testing, desc: "Master automation, dashboards & analysis using advanced Excel tools." },
   ];
 
   return (
     <div className="cc-wrapperr">
 
-      {/* ================= TOP HEADING SECTION ================= */}
+      {/* ================= TOP HEADING ================= */}
       <div className="top-section">
 
-        {/* LEFT BARS */}
-        <div
-          ref={barsRef}
-          className={`left-bars cc-fade-left ${animate.bars ? "show" : ""}`}
-        >
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
+       {/* LEFT 3 FULL-WIDTH POWER BARS */}
+<div
+  ref={barsRef}
+  className={`power-bars cc-fade-left ${animate.bars ? "show" : ""}`}
+  data-anim="bars"
+>
+  <div className="power-bar"></div>
+  <div className="power-bar"></div>
+  <div className="power-bar"></div>
+</div>
+
 
         {/* RIGHT TITLE */}
         <div
@@ -109,7 +111,7 @@ const CourseCards = () => {
 
       </div>
 
-      {/* ================= CARD GRID SECTION ================= */}
+      {/* ================= CARD GRID ================= */}
       <div className="container">
         <div className="row g-4">
           {cards.map((item, index) => (
@@ -128,8 +130,7 @@ const CourseCards = () => {
                   <h3 className="cc-title">{item.title}</h3>
                   <p className="cc-desc">{item.desc}</p>
 
-                  {/* UPDATED BUTTON → CLICKABLE LINK */}
-                 <Link to="/contact" className="enroll-btn">Enroll</Link> 
+                  <Link to="/contact" className="enroll-btn">Enroll</Link>
                 </div>
 
               </div>

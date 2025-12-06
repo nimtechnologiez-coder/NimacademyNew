@@ -3,7 +3,7 @@
 /* ============================================================= */
 .cc-wrapperr {
   width: 100%;
-  padding: 60px 6%;
+  padding: 10px 6%;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
@@ -249,5 +249,23 @@
   .cc-btn {
     font-size: 12px;
     padding: 6px 18px;
+  }
+}
+.power-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;               /* spacing between bars */
+  width: 50%;             /* stretch full width */
+}
+
+.power-bar {
+  width: 70%;
+  height: 12px;            /* exact thickness like screenshot */
+  border-radius: 6px;
+  background: linear-gradient(90deg, #0aa3e0, #b8ff62);
+}
+@media (max-width: 600px) {
+  .power-bars {
+    display: none !important;
   }
 }

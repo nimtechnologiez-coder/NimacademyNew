@@ -71,26 +71,34 @@ const Footer = () => {
         </div>
 
         {/* RIGHT LINKS */}
-        <div className="col-md-5 right-section">
-          <div className="row">
+        {/* RIGHT LINKS */}
+<div className="col-md-5 right-section">
+  <div className="row">
 
-            <div className="col-6 mb-3"><a href="#">Accessibility on Ocean School</a></div>
-            <div className="col-6 mb-3"><a href="#">Help Centre →</a></div>
+    {/* LEFT SIDE (2 links) */}
+    <div className="col-6 mb-3">
+      <a href="#">Privacy policy →</a>
+    </div>
+    <div className="col-6 mb-3">
+      <a href="#">Terms and conditions →</a>
+    </div>
 
-            <div className="col-6 mb-3"><a href="#">Privacy policy</a></div>
-            <div className="col-6 mb-3"><a href="#">Partners</a></div>
+    {/* RIGHT SIDE (3 links) */}
+    <div className="col-6 mb-3">
+      <a href="/Contact">Help Centre →</a>
+    </div>
 
-            <div className="col-6 mb-3"><a href="#">Terms and conditions →</a></div>
-            <div className="col-6 mb-3"><a href="#">NFB Education →</a></div>
+    <div className="col-6 mb-3">
+      <a href="/college">College Collaboration →</a>
+    </div>
 
-            <div className="col-6 mb-3"><a href="#">Credits</a></div>
-            <div className="col-6 mb-3"><a href="#">Make a donation →</a></div>
+    <div className="col-6 mb-3">
+      <a href="/course">Explore</a>
+    </div>
 
-            <div className="col-6 mb-3"></div>
-            <div className="col-6 mb-3"><a href="#">About us</a></div>
+  </div>
+</div>
 
-          </div>
-        </div>
 
       </div>
     </div>
