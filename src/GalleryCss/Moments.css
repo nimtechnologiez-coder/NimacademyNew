@@ -208,3 +208,10 @@ body {
     font-size: 13.5px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .center-img-box {
+    margin-bottom: 12px !important; /* ✅ was 75px */
+  }
+}

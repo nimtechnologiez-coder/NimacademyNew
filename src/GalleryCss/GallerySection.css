@@ -201,6 +201,11 @@ body {
 
 /* EXTRA SMALL PHONES: 320px */
 @media (max-width: 320px) {
+
+  .gallery-wrapper {
+    padding-bottom: 10px;
+  }
+
   .highlight-title {
     font-size: 14px;
   }
@@ -241,6 +246,7 @@ body {
   .image-row {
     gap: 12px;
     padding: 0 12px;
+    margin-bottom: -20px;
   }
   
 }
