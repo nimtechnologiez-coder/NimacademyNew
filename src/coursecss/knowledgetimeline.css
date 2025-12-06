@@ -1,9 +1,10 @@
-/* Timeline Container */
+/* =========================
+   Timeline Container
+========================= */
 .timeline-container {
   padding: 40px 0;
   background: #fff;
   font-family: 'Roboto', 'Arial', sans-serif;
-  min-height: 100vh;
 }
 
 .timeline-title {
@@ -14,7 +15,9 @@
   margin-bottom: 50px;
 }
 
-/* Timeline Base */
+/* =========================
+   Timeline Base
+========================= */
 .timeline {
   position: relative;
   width: 88%;
@@ -24,7 +27,7 @@
 }
 
 /* Vertical Line */
-.timeline:before {
+.timeline::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -36,7 +39,9 @@
   z-index: 1;
 }
 
-/* Timeline Item */
+/* =========================
+   Timeline Item
+========================= */
 .timeline-item {
   display: flex;
   align-items: flex-start;
@@ -60,7 +65,7 @@
 }
 
 /* Dot Marker */
-.timeline-item:before {
+.timeline-item::before {
   content: "";
   position: absolute;
   top: 35px;
@@ -73,17 +78,18 @@
   transform: translateX(-50%);
 }
 
-.timeline-item.right:before {
+.timeline-item.right::before {
   left: 0;
-  transform: translateX(-50%);
 }
 
-/* SESSION IMAGE — EXACT FIX */
+/* =========================
+   Session Image
+========================= */
 .session-img {
-  width: 293px;            /* EXACT same width as screenshot */
-  height: 221px;           /* Square images */
-  object-fit: cover;       /* Prevent distortion */
-  border-radius: 10px;     /* Same smooth corner */
+  width: 293px;
+  height: 221px;
+  object-fit: cover;
+  border-radius: 10px;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
   margin-right: 25px;
 }
@@ -93,10 +99,12 @@
   margin-left: 25px;
 }
 
-/* Content Card */
+/* =========================
+   Content
+========================= */
 .content {
   background: #fff;
-  padding: 5px 5px;
+  padding: 5px;
   border-radius: 6px;
   max-width: 340px;
 }
@@ -108,7 +116,6 @@
   margin-bottom: 10px;
 }
 
-/* Description */
 .content p {
   font-size: 1.05rem;
   color: #333;
@@ -116,10 +123,16 @@
   margin-top: 5px;
 }
 
-/* MOBILE FIXES */
+/* =========================
+   MOBILE FIXES ✅ FINAL
+========================= */
 @media (max-width: 768px) {
-  .timeline:before {
+
+  /* Move line left + remove line above first dot */
+  .timeline::before {
     left: 30px;
+    top: 15px;                   /* ✅ start at first dot */
+    height: calc(100% - 15px);   /* ✅ trims top line */
   }
 
   .timeline-item,
@@ -132,11 +145,24 @@
     flex-direction: column;
   }
 
-  .timeline-item:before {
+  /* Dot exactly aligned with line */
+  .timeline-item::before {
     left: 27px !important;
     top: 15px;
   }
 
+  /* Remove extra space before first item */
+  .timeline-item:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  /* Reduce vertical gap between timeline items */
+  .timeline-item {
+    margin-bottom: 60px;
+  }
+
+  /* Mobile image size */
   .session-img {
     width: 140px;
     height: 140px;

@@ -90,7 +90,7 @@ const Timeline = () => {
           <img src={img3} alt="session" className="session-img hover-zoom" />
           <div className="content card-hover">
             <h3 className="time-text">
-              7 AM
+              10 AM
             </h3>
             <p>
               <b>Evening Doubt Clearing</b>
@@ -109,7 +109,7 @@ const Timeline = () => {
           <img src={img2} alt="session" className="session-img hover-zoom" />
           <div className="content card-hover">
             <h3 className="time-text">
-              1 AM
+              11 AM
             </h3>
             <p>
               <b>Hands-On Practice Sessions</b>
@@ -127,7 +127,7 @@ const Timeline = () => {
         >
           <div className="content card-hover">
             <h3 className="time-text">
-              8 AM
+              12 PM
             </h3>
             <p>
               <b>Daily Recap</b>

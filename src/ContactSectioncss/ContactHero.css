@@ -118,11 +118,29 @@
   }
 
   .ct-person-wrap {
-    width: 270px;
-    height: 270px;
+    width: 300px;
+    height: 300px;
   }
 
   .ct-person-img {
-    width: 240px;
+    width: 270px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ct-hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 6%;
+  }
+
+  .ct-person-wrap {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ct-hero-wrapper {
+    padding-bottom: 20px;
   }
 }

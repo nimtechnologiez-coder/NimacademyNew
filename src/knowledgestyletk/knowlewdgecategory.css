@@ -1,27 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* =========================
+   SECTION
+========================= */
 .category-section {
   background: #fff;
   padding: 38px 0;
   font-family: 'Roboto', 'Arial', sans-serif;
-  
 }
 
+/* =========================
+   TITLE
+========================= */
 .cat-title {
   text-align: center;
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 30px;
-  
 }
 
 .cat-green {
   color: #43a047;
   font-weight: 700;
 }
+
 .cat-blue {
   color: #2358a2;
   font-weight: 700;
 }
 
+/* =========================
+   GRID WRAPPER
+========================= */
 .cat-grid-wrapper {
   display: flex;
   align-items: flex-start;
@@ -30,49 +40,57 @@
   max-width: 1200px;
   margin: 0 auto;
   gap: 25px;
-  
 }
 
+/* =========================
+   GRID
+========================= */
 .cat-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 20px;
   flex: 2 1 640px;
   min-width: 270px;
-  
 }
 
+/* =========================
+   CARD
+========================= */
 .cat-card {
   display: flex;
   align-items: center;
   background: #f8fbfa;
   border-radius: 7px;
-  box-shadow: 0 2px 13px 0 rgba(44, 87, 151, 0.08);
+  box-shadow: 0 2px 13px rgba(44, 87, 151, 0.08);
   padding: 18px 30px 17px 22px;
-  min-width: 220px;
-  max-width: 420px;
   font-size: 1.08rem;
-  position: relative;
   gap: 24px;
-  
+
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
 }
 
+/* =========================
+   NUMBER IMAGE
+========================= */
 .cat-card-num-img {
   width: 70px;
   height: auto;
-  margin-right: 18px;
-  margin-left: 0;
   display: block;
-  
+  flex-shrink: 0;
 }
 
+/* Desktop alternating layout preserved */
 .cat-card:nth-child(3) .cat-card-num-img,
 .cat-card:nth-child(4) .cat-card-num-img {
   margin-left: 18px;
-  margin-right: 0;
 }
 
+/* =========================
+   TEXT
+========================= */
 .cat-card-text {
   color: #20242a;
   font-size: 1rem;
@@ -80,44 +98,92 @@
   line-height: 1.45;
 }
 
-/* Responsive Styles */
+/* =========================
+   TABLET
+========================= */
 @media (max-width: 1100px) {
   .cat-grid-wrapper {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
   }
 }
 
+/* =========================
+   ✅ MOBILE – FINAL PERFECT FIX
+========================= */
 @media (max-width: 700px) {
-  .cat-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 13px;
-  }
+
   .category-section {
-    padding: 13px 2vw;
+    padding: 22px 4vw;
   }
-  .cat-card {
-    padding: 13px 14px 13px 14px;
-    font-size: 0.98rem;
-    height: fit-content;
-    min-width: 0;
-    gap: 15px;
-    max-width: 99vw;
-  }
-  .cat-card-num-img {
-    width: 45px;
-    margin-right: 8px;
-    margin-left: 0;
-  }
-  .cat-card:nth-child(3) .cat-card-num-img,
-  .cat-card:nth-child(4) .cat-card-num-img {
-    margin-left: 8px;
-    margin-right: 0;
-  }
+
   .cat-title {
     font-size: 1.4rem;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
+  }
+
+  /* ✅ grid centering */
+  .cat-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;     /* HARD CENTER */
+    gap: 24px;                /* SPACE BETWEEN CARDS */
+    width: 100%;
+  }
+
+  /* ✅ card centering */
+  .cat-card {
+    width: 100%;
+    max-width: 320px;         /* PERFECT MOBILE WIDTH */
+    margin: 0 auto;
+    padding: 16px;
+    gap: 14px;
+  }
+
+  /* ✅ normalize layout for all cards */
+  .cat-card {
+    flex-direction: row;
+  }
+
+  /* ✅ number image */
+  .cat-card-num-img {
+    width: 45px;
+    margin-right: 12px;
+    margin-left: 0;
+  }
+
+  /* ✅ REMOVE desktop alternating offsets */
+  .cat-card:nth-child(3) .cat-card-num-img,
+  .cat-card:nth-child(4) .cat-card-num-img {
+    margin-left: 0 !important;
+    margin-right: 12px !important;
+  }
+
+  .cat-card-text {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  /* ✅ Fix tall empty space inside cards */
+  .cat-card {
+    align-items: flex-start;   /* 🔑 KEY FIX */
+    height: auto;
+  }
+
+  /* ✅ Text spacing cleanup */
+  .cat-card-text {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;          /* was too tall visually */
+  }
+
+  /* ✅ Guarantee clean spacing BETWEEN cards */
+  .cat-grid {
+    gap: 26px;
   }
 }

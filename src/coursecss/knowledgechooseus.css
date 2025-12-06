@@ -222,6 +222,7 @@ text-align: justify;
     text-align: center;
     margin: 0 auto 10px;     /* center the block */
     padding: 0 8px;          /* small side padding */
+    margin-bottom: -100px;
   }
 
   .why-point {
@@ -381,5 +382,25 @@ text-align: justify;
 
   .ribbons-shadow {
     width: 85%;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  /* ✅ Remove hidden left margin causing blank space */
+  .why-list {
+    margin-left: 0 !important;
+  }
+
+  /* ✅ Remove large gap before ribbon */
+  .ribbons-wrapper {
+    margin-top: 20px !important;
+    margin-bottom: 30px;
+  }
+
+  /* ✅ Tighten section bottom spacing */
+  .why-section {
+    padding-bottom: 10px;
   }
 }

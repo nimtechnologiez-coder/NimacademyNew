@@ -131,7 +131,7 @@
 
 /* Mobile Portrait */
 @media (max-width: 576px) {
-  .gallery-hero { height: 620px; }
+  .gallery-hero { height: 520px; }
   .hero-text { top: 120px; left: 20px; }
   .hero-text h1 { font-size: 32px; }
   .hero-person img { width: 260px; }
@@ -145,3 +145,5 @@
   .hero-person img { width: 350px; }
   .hanger-lines { width: 160px; }
 }
+
+
