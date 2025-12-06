@@ -79,7 +79,7 @@ const ContactFollowPage = () => {
 
             <p className="contact-info">
               <i className="bi bi-envelope-fill contact-icon"></i>
-              info@nimtechnologies.org
+              contactnimacademy@gmail.com
             </p>
 
             {/* SOCIAL ICONS */}
