@@ -1,6 +1,6 @@
 import React from "react";
 import "../Style/growthhero.css";
-import graduates from "../Images/twoheroman.png"; // <-- your image
+import graduates from "../Images/twoheroman.png"; 
 
 const GrowthBanner = () => {
   return (

@@ -55,7 +55,6 @@
 }
 
 
-
 /* PERSON IMAGE */
 .ct-person-img {
   width: 400px;
@@ -142,5 +141,133 @@
 @media (max-width: 480px) {
   .ct-hero-wrapper {
     padding-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+/* ================================
+   RESPONSIVE — CLEAN + OPTIMIZED
+================================ */
+
+/* LARGE TABLETS & SMALL LAPTOPS */
+@media (max-width: 992px) {
+  .ct-hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 6%;
+  }
+
+  .ct-left,
+  .ct-right {
+    width: 100%;
+  }
+
+  .ct-title {
+    font-size: 40px;
+        margin-top: 50px;
+
+  }
+
+  .ct-desc {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .ct-person-wrap {
+    width: 320px;
+    height: 320px;
+    margin-top: 20px;
+  }
+
+  .ct-person-img {
+    width: 280px;
+  }
+}
+
+/* LARGE MOBILE (425px–480px) */
+@media (max-width: 480px) {
+  .ct-hero-wrapper {
+    padding: 40px 6% 20px;
+  }
+
+  .ct-title {
+    font-size: 32px;
+    line-height: 5.3;
+
+  }
+
+  .ct-desc {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .ct-person-wrap {
+    width: 260px;
+    height: 260px;
+    margin-top: 15px;
+  }
+
+  .ct-person-img {
+    width: 230px;
+  }
+
+  .ct-dots {
+    width: 90px;
+    height: 90px;
+    top: -10px;
+    right: 20px;
+  }
+}
+
+/* MEDIUM MOBILE (375px–425px) */
+@media (max-width: 425px) {
+  .ct-title {
+    font-size: 28px;
+        margin-top: 50px;
+
+  }
+
+  .ct-desc {
+    font-size: 16px;
+  }
+
+  .ct-person-wrap {
+    width: 230px;
+    height: 230px;
+  }
+
+  .ct-person-img {
+    width: 200px;
+  }
+}
+
+/* SMALL MOBILE (320px–360px) */
+@media (max-width: 360px) {
+  .ct-title {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+
+  .ct-desc {
+    font-size: 15px;
+  }
+
+  .ct-person-wrap {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ct-person-img {
+    width: 180px;
+  }
+
+  .ct-dots {
+    width: 70px;
+    height: 70px;
+    right: 10px;
   }
 }

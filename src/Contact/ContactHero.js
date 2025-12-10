@@ -1,6 +1,5 @@
 import React from "react";
 import "../ContactSectioncss/ContactHero.css";
-
 import bgImg from "../Images/contacthero.png";
 import personImg from "../Images/contactperson.png";
 
