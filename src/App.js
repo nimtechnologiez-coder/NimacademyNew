@@ -185,7 +185,7 @@ function App() {
         />
 
                 <Route
-          path="/StudentForm"
+          path="/Webinar-registration"
           element={
             <>
             <StudentForm/>
