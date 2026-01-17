@@ -53,6 +53,7 @@ import InternshipSection from "./Internshippage/internhero";
 import CollaborationSection from "./Internshippage/internship";
 import DomainsSection from "./Internshippage/interntool";
 import HeroSlider from "./compounds/heroslider";
+import StudentForm from "./compounds/StudentForm";
 function App() {
   return (
     <BrowserRouter>
@@ -178,6 +179,16 @@ function App() {
                <DomainsSection />
             <InternshipTopCards /> 
                <CollaborationSection />
+              <Footer />
+            </>
+          }
+        />
+
+                <Route
+          path="/StudentForm"
+          element={
+            <>
+            <StudentForm/>
               <Footer />
             </>
           }
