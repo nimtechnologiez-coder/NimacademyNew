@@ -5,6 +5,10 @@ import logoImg from "../Images/navbar.png";
 const Navbar = () => {
   const [mobilePagesOpen, setMobilePagesOpen] = useState(false);
 
+  <button onClick={() => setMobilePagesOpen(!mobilePagesOpen)}>
+  Menu
+</button>
+
   // Overlay Menu Logic
   useEffect(() => {
     const hamburger = document.getElementById("hamburger");

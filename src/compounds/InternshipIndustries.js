@@ -11,10 +11,6 @@ import {
   faCloud,
   faGraduationCap,
   faUtensils,
-  faChartLine,
-  faGears,
-  faCode,
-  faDesktop
 } from "@fortawesome/free-solid-svg-icons";
 
 const InternshipIndustries = () => {

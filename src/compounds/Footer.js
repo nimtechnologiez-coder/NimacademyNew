@@ -77,10 +77,10 @@ const Footer = () => {
 
     {/* LEFT SIDE (2 links) */}
     <div className="col-6 mb-3">
-      <a href="#">Privacy policy →</a>
+      <a href="/Contact">Privacy policy →</a>
     </div>
     <div className="col-6 mb-3">
-      <a href="#">Terms and conditions →</a>
+      <a href="/Contact">Terms and conditions →</a>
     </div>
 
     {/* RIGHT SIDE (3 links) */}
