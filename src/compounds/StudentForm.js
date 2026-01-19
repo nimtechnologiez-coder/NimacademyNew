@@ -4,7 +4,7 @@ import "../Style/StudentForm.css";
 
 function StudentForm() {
 
-  const eventTime = "06:00 AM - 07:30 PM";
+  const eventTime = "06:00 PM - 07:30 PM";
   const whatsappGroupLink = "https://chat.whatsapp.com/KGkihPGklz06HPXyQUGEZJ";
 
   const [showModal, setShowModal] = useState(false);
