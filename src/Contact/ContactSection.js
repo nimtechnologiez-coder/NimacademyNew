@@ -83,20 +83,39 @@ const ContactFollowPage = () => {
             </p>
 
             {/* SOCIAL ICONS */}
-            <div className="social-icons">
-              <a href="https://www.instagram.com/nim_academy/" target="_blank">
-                <i className="bi bi-instagram"></i>
-              </a>
-              <a href="https://facebook.com" target="_blank">
-                <i className="bi bi-facebook"></i>
-              </a>
-              <a href="https://youtube.com" target="_blank">
-                <i className="bi bi-youtube"></i>
-              </a>
-              <a href="https://twitter.com" target="_blank">
-                <i className="bi bi-twitter-x"></i>
-              </a>
-            </div>
+<div className="social-icons">
+  <a
+    href="https://www.instagram.com/nim_academy/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="bi bi-instagram"></i>
+  </a>
+
+  <a
+    href="https://facebook.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="bi bi-facebook"></i>
+  </a>
+
+  <a
+    href="https://youtube.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="bi bi-youtube"></i>
+  </a>
+
+  <a
+    href="https://twitter.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="bi bi-twitter-x"></i>
+  </a>
+</div>
 
           </div>
 

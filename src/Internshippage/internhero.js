@@ -2,7 +2,6 @@ import React from "react";
 import "../knowledgestyletk/internhero.css";
 
 import internImg from "../Internshipimage/internhero.png";
-import bgTexture from "../Internshipimage/internbg.png";
 
 const InternshipSection = () => {
   return (

@@ -11,7 +11,6 @@ import Footer from "./compounds/Footer";
 import PlacementCircle from "./compounds/PlacementCircle";
 
 import WhyCreatedProgram from "./Program/WhyCreatedProgram";
-import HeroSection from "./compounds/HeroSection";
 import LearningModel from "./Program/LearningModel";
 import PowerPrograms from "./Program/PowerPrograms";
 import ProgramHero from "./Program/HeroSection";
