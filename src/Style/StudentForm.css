@@ -136,15 +136,17 @@
   background:white;
 }
 
-.countdown-box {
+ .countdown-box {
   position: absolute;
-  left: 590px;
   top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
   background: #fff;
   padding: 20px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 330px;
 }
 
 .timer {
@@ -181,3 +183,4 @@
 
 
 
+ 
