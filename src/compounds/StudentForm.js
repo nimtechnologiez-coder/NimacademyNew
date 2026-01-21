@@ -1,15 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import "../Style/StudentForm.css";
 
 function StudentForm() {
 
+  /* ================= EVENT CONFIG ================= */
+  const eventDateTime = new Date("2026-01-24T18:00:00").getTime(); // 24 Jan 2026, 6:00 PM
   const eventTime = "06:00 PM - 07:30 PM";
   const whatsappGroupLink = "https://chat.whatsapp.com/KGkihPGklz06HPXyQUGEZJ";
 
+  /* ================= TIMER STATE ================= */
+  const [timeLeft, setTimeLeft] = useState({});
+  const [expired, setExpired] = useState(false);
+
+  /* ================= UI STATE ================= */
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  /* ================= FORM STATE ================= */
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -21,26 +29,44 @@ function StudentForm() {
     college: ""
   });
 
+  /* ================= TIMER LOGIC ================= */
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = eventDateTime - now;
+
+      if (distance <= 0) {
+        clearInterval(interval);
+        setExpired(true);
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      } else {
+        setTimeLeft({
+          days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((distance / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((distance / (1000 * 60)) % 60),
+          seconds: Math.floor((distance / 1000) % 60),
+        });
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [eventDateTime]);
+
+  /* ================= HANDLERS ================= */
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
+    if (expired) return;
 
-    const finalData = {
-      ...formData,
-      time: eventTime
-    };
+    setLoading(true);
 
     emailjs.send(
       "service_wxyr9d8",
       "template_se4uupk",
-      finalData,
+      { ...formData, time: eventTime },
       "uxCZ6WGvKJaBi87p0"
     )
     .then(() => {
@@ -59,8 +85,7 @@ function StudentForm() {
           education: "",
           college: ""
         });
-
-      }, 2000);
+      }, 1500);
     })
     .catch(() => {
       setLoading(false);
@@ -68,61 +93,60 @@ function StudentForm() {
     });
   };
 
+  /* ================= JSX ================= */
   return (
     <div className="form-container">
 
+      {/* 🔴 LEFT COUNTDOWN AREA */}
+      <div className="countdown-box">
+        <h3>Registration Ends In</h3>
+
+        {!expired ? (
+          <div className="timer">
+            <div><span>{String(timeLeft.days).padStart(2, "0")}</span><p>Days</p></div>
+            <div><span>{String(timeLeft.hours).padStart(2, "0")}</span><p>Hours</p></div>
+            <div><span>{String(timeLeft.minutes).padStart(2, "0")}</span><p>Min</p></div>
+            <div><span>{String(timeLeft.seconds).padStart(2, "0")}</span><p>Sec</p></div>
+          </div>
+        ) : (
+          <p className="closed-text">Registration Closed</p>
+        )}
+      </div>
+
+      {/* EVENT INFO */}
       <div className="event-box">
         <h2>Building Autonomous AI Agents Using LLMs</h2>
         <p>(From Prompting to Self-Directed Intelligence - Live Demo)</p>
         <h4>📅 24/01/2026 | ⏰ {eventTime}</h4>
       </div>
 
+      {/* FORM */}
       <form onSubmit={handleSubmit} className="horizontal-form">
 
-        <div className="field">
-          <label>Full Name</label>
-          <input name="fullName"
-            value={formData.fullName}
-            onChange={handleChange} required />
-        </div>
+        {[
+          ["Full Name", "fullName"],
+          ["Email", "email", "email"],
+          ["Mobile Number", "mobile"],
+          ["WhatsApp Number", "whatsapp"],
+          ["City", "city"],
+          ["Education Qualification", "education"],
+          ["College Name", "college"],
+        ].map(([label, name, type]) => (
+          <div className="field" key={name}>
+            <label>{label}</label>
+            <input
+              type={type || "text"}
+              name={name}
+              value={formData[name]}
+              onChange={handleChange}
+              required
+            />
+          </div>
+        ))}
 
-        <div className="field">
-          <label>Email</label>
-          <input type="email" name="email"
-            value={formData.email}
-            onChange={handleChange} required />
-        </div>
-
-        <div className="field">
-          <label>Mobile Number</label>
-          <input name="mobile"
-            value={formData.mobile}
-            onChange={handleChange} required />
-        </div>
-
-        <div className="field">
-          <label>WhatsApp Number</label>
-          <input name="whatsapp"
-            value={formData.whatsapp}
-            onChange={handleChange} required />
-        </div>
-
-        <div className="field">
-          <label>City</label>
-          <input name="city"
-            value={formData.city}
-            onChange={handleChange} required />
-        </div>
-
-        {/* 🔽 DROPDOWN ADDED HERE */}
         <div className="field">
           <label>Current Role</label>
-          <select
-            name="role"
-            value={formData.role}
-            onChange={handleChange}
-            required
-          >
+          <select name="role" value={formData.role} onChange={handleChange} required>
             <option value="">Select Role</option>
             <option value="Student">Student</option>
             <option value="Working Professional">Working Professional</option>
@@ -130,22 +154,8 @@ function StudentForm() {
           </select>
         </div>
 
-        <div className="field">
-          <label>Education Qualification</label>
-          <input name="education"
-            value={formData.education}
-            onChange={handleChange} required />
-        </div>
-
-        <div className="field">
-          <label>College Name</label>
-          <input name="college"
-            value={formData.college}
-            onChange={handleChange} required />
-        </div>
-
-        <button type="submit" disabled={loading}>
-          {loading ? "Registering..." : "Register"}
+        <button type="submit" disabled={loading || expired}>
+          {expired ? "Registration Closed" : loading ? "Registering..." : "Register"}
         </button>
       </form>
 
