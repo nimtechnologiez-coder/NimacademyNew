@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
+
+
 import "../Style/StudentForm.css";
 
 function StudentForm() {
@@ -63,10 +65,10 @@ function StudentForm() {
 
     emailjs
       .send(
-        "service_u3nbtbi",
-        "template_xzn9h0w",
+        "service_h9ltmqo",
+        "template_dd14def",
         { ...formData, time: eventTime },
-        "TSRsf-ZxaarV3fTup"
+        "MLkkCdDRqCMIpHVPp"
       )
       .then(() => {
         setTimeout(() => {
