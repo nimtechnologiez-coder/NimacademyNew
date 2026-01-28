@@ -6,9 +6,10 @@ import "../Style/StudentForm.css";
 
 function StudentForm() {
   /* ================= EVENT CONFIG ================= */
-  const eventDateTime = new Date("2026-01-24T18:00:00").getTime();
-  const eventTime = "06:00 PM - 07:30 PM";
-  const whatsappGroupLink = "https://chat.whatsapp.com/KGkihPGklz06HPXyQUGEZJ";
+  const eventDateTime = new Date("2026-01-31T18:00:00+05:30").getTime();
+
+  const eventTime = "06:00 PM";
+  const whatsappGroupLink = "https://chat.whatsapp.com/K4yFIKHWXiBL0SgttTxd4d";
 
   /* ================= TIMER STATE ================= */
   const [timeLeft, setTimeLeft] = useState({});
@@ -117,9 +118,9 @@ function StudentForm() {
         {/* FORM */}
         <div className="form-container">
           <div className="event-box">
-            <h2>Building Autonomous AI Agents Using LLMs</h2>
+            <h2>Building Autonomous AI & Agent Systems</h2>
             <p>(From Prompting to Self-Directed Intelligence – Live Demo)</p>
-            <h4>📅 24/01/2026 | ⏰ {eventTime}</h4>
+            <h4>📅 31/01/2026 | ⏰ {eventTime}</h4>
           </div>
 
           <form onSubmit={handleSubmit} className="horizontal-form">
