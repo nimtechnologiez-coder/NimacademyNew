@@ -119,7 +119,8 @@ function StudentForm() {
         <div className="form-container">
           <div className="event-box">
             <h2>Building Autonomous AI & Agent Systems</h2>
-            <p>(From Prompting to Self-Directed Intelligence – Live Demo)</p>
+            <p>(From AI Fundamentals to Real-World Agent System
+ – Live Demo)</p>
             <h4>📅 31/01/2026 | ⏰ {eventTime}</h4>
           </div>
 
