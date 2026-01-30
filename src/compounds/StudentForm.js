@@ -66,8 +66,8 @@ function StudentForm() {
 
     emailjs
       .send(
-        "service_vgs1x9o",
-        "template_yimo4ex",
+        "service_o35b517",
+        "template_bva6ofs",
         { ...formData, time: eventTime },
         "5Bc4BON6oUn3_SlAW"
       )
