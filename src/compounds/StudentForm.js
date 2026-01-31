@@ -66,10 +66,10 @@ function StudentForm() {
 
     emailjs
       .send(
-        "service_h2r2ojd",
-        "template_g6ekd1o",
+        "service_o35b517",
+        "template_bva6ofs",
         { ...formData, time: eventTime },
-        "hr-zBHbUvZoPq6UPR"
+        "5Bc4BON6oUn3_SlAW"
       )
       .then(() => {
         setTimeout(() => {
