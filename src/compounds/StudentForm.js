@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
-
 import "../Style/StudentForm.css";
 
 function StudentForm() {
   /* ================= EVENT CONFIG ================= */
-  const eventDateTime = new Date("2026-01-31T18:00:00+05:30").getTime();
-
+  const eventDateTime = new Date("2026-02-07T18:00:00+05:30").getTime();
   const eventTime = "06:00 PM";
-  const whatsappGroupLink = "https://chat.whatsapp.com/K4yFIKHWXiBL0SgttTxd4d";
+  const eventDateText = "07/02/2026";
+
+  const whatsappGroupLink =
+    "https://chat.whatsapp.com/K4yFIKHWXiBL0SgttTxd4d";
 
   /* ================= TIMER STATE ================= */
   const [timeLeft, setTimeLeft] = useState({});
@@ -68,7 +69,12 @@ function StudentForm() {
       .send(
         "service_gw0jupp",
         "template_v3figgf",
-        { ...formData, time: eventTime },
+        {
+          ...formData,
+          event_date: eventDateText,
+          event_time: eventTime,
+          event_name: "Cyber Security 360° Live",
+        },
         "7XoSKX87VlShLss7C"
       )
       .then(() => {
@@ -98,30 +104,51 @@ function StudentForm() {
   return (
     <div className="page-wrapper">
       <div className="layout">
-
         {/* COUNTDOWN */}
         <div className="countdown-box">
-          <h3>Registration Ends In</h3>
+          <h3>Event Starts In</h3>
 
           {!expired ? (
             <div className="timer">
-              <div><span>{timeLeft.days}</span><p>Days</p></div>
-              <div><span>{timeLeft.hours}</span><p>Hours</p></div>
-              <div><span>{timeLeft.minutes}</span><p>Min</p></div>
-              <div><span>{timeLeft.seconds}</span><p>Sec</p></div>
+              <div>
+                <span>{timeLeft.days}</span>
+                <p>Days</p>
+              </div>
+              <div>
+                <span>{timeLeft.hours}</span>
+                <p>Hours</p>
+              </div>
+              <div>
+                <span>{timeLeft.minutes}</span>
+                <p>Min</p>
+              </div>
+              <div>
+                <span>{timeLeft.seconds}</span>
+                <p>Sec</p>
+              </div>
             </div>
           ) : (
-            <p className="closed-text">Registration Closed</p>
+            <p className="closed-text">Event Started</p>
           )}
         </div>
 
         {/* FORM */}
         <div className="form-container">
           <div className="event-box">
-            <h2>Building Autonomous AI & Agent Systems</h2>
-            <p>(From AI Fundamentals to Real-World Agent System
- – Live Demo)</p>
-            <h4>📅 31/01/2026 | ⏰ {eventTime}</h4>
+            <h2>Cyber Security 360° Live</h2>
+
+            <p>
+              Ethical Hacking, Penetration Testing, Cloud Security (AWS & Azure),
+              SIEM, Incident Response & AI in Cyber Security
+            </p>
+
+            <h4>
+              📅 {eventDateText} | ⏰ {eventTime}
+            </h4>
+
+            <p>
+              <strong>Speaker:</strong> Vishwanath Gowda
+            </p>
           </div>
 
           <form onSubmit={handleSubmit} className="horizontal-form">
@@ -148,16 +175,27 @@ function StudentForm() {
 
             <div className="field">
               <label>Current Role</label>
-              <select name="role" value={formData.role} onChange={handleChange} required>
+              <select
+                name="role"
+                value={formData.role}
+                onChange={handleChange}
+                required
+              >
                 <option value="">Select Role</option>
                 <option value="Student">Student</option>
-                <option value="Working Professional">Working Professional</option>
+                <option value="Working Professional">
+                  Working Professional
+                </option>
                 <option value="Staff">Staff</option>
               </select>
             </div>
 
             <button type="submit" disabled={loading || expired}>
-              {expired ? "Registration Closed" : loading ? "Registering..." : "Register"}
+              {expired
+                ? "Registration Closed"
+                : loading
+                ? "Registering..."
+                : "Register"}
             </button>
           </form>
         </div>
