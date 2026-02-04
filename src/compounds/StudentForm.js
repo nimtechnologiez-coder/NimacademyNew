@@ -32,6 +32,8 @@ function StudentForm() {
     college: "",
   });
 
+  const [instagramFollowed, setInstagramFollowed] = useState(false);
+
   /* ================= TIMER LOGIC ================= */
   useEffect(() => {
     const interval = setInterval(() => {
@@ -65,17 +67,27 @@ function StudentForm() {
 
     setLoading(true);
 
+    /* 
+     * EmailJS Template Configuration (template_v3figgf):
+     * - TO: {{email}} (sends to the user's email address)
+     * - Subject: "Registration Confirmed - Cyber Security 360° Live"
+     * - Body should include:
+     *   - {{fullName}}, {{event_name}}, {{event_date}}, {{event_time}}
+     *   - Invitation message: "Join our WhatsApp community: {{whatsapp_link}}"
+     *   - All other form fields: {{mobile}}, {{whatsapp}}, {{city}}, {{role}}, {{education}}, {{college}}
+     */
     emailjs
       .send(
-        "service_gw0jupp",
-        "template_v3figgf",
+        "service_tll1snd",
+        "template_olrok0d",
         {
           ...formData,
           event_date: eventDateText,
           event_time: eventTime,
           event_name: "Cyber Security 360° Live",
+          whatsapp_link: whatsappGroupLink,
         },
-        "7XoSKX87VlShLss7C"
+        "QC3QrwU8Va2yNQ4_F"
       )
       .then(() => {
         setTimeout(() => {
@@ -93,11 +105,13 @@ function StudentForm() {
             education: "",
             college: "",
           });
+          setInstagramFollowed(false);
         }, 1200);
       })
-      .catch(() => {
+      .catch((error) => {
         setLoading(false);
-        alert("Email sending failed");
+        console.error("EmailJS Error:", error);
+        alert(`Email sending failed: ${error.text || error.message || "Unknown error"}`);
       });
   };
 
@@ -190,12 +204,38 @@ function StudentForm() {
               </select>
             </div>
 
-            <button type="submit" disabled={loading || expired}>
+            {/* Instagram Follow Gate */}
+            <div className="instagram-gate">
+              <a
+                href="https://www.instagram.com/nim_academy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="instagram-btn"
+              >
+                📸 Follow us on Instagram
+              </a>
+
+              <p className="instagram-warning">
+                ⚠️ Please follow our Instagram page before submitting the registration form.
+              </p>
+
+              <label className="instagram-check">
+                <input
+                  type="checkbox"
+                  checked={instagramFollowed}
+                  onChange={(e) => setInstagramFollowed(e.target.checked)}
+                  required
+                />
+                <span>I have followed @nim_academy on Instagram</span>
+              </label>
+            </div>
+
+            <button type="submit" disabled={loading || expired || !instagramFollowed}>
               {expired
                 ? "Registration Closed"
                 : loading
-                ? "Registering..."
-                : "Register"}
+                  ? "Registering..."
+                  : "Register"}
             </button>
           </form>
         </div>
