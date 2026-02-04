@@ -10,7 +10,7 @@ function StudentForm() {
   const eventDateText = "07/02/2026";
 
   const whatsappGroupLink =
-    "https://chat.whatsapp.com/K4yFIKHWXiBL0SgttTxd4d";
+    "https://chat.whatsapp.com/DML3rWiGbayL9GH96XtlHM";
 
   /* ================= TIMER STATE ================= */
   const [timeLeft, setTimeLeft] = useState({});
