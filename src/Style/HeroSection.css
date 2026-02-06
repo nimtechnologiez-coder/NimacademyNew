@@ -182,7 +182,7 @@ bottom: 250px;
   }
 
   .nim-hero-center {
-    margin-top: 40px;
+    margin-top: 10px;
   }
 
   .nim-hero-ribbon {
@@ -209,6 +209,7 @@ bottom: 250px;
     left: 25%;
   }
 
+
   .nim-hero-stem-right {
     right: 25%;
   }
@@ -225,7 +226,7 @@ bottom: 250px;
     margin-top: -100px;
   }
    .nim-hero-right {
-    margin-top: 20px; /* pull it UP */
+    margin-top: 10px; /* pull it UP */
   }
 
   .nim-hero-right-text p {
@@ -236,7 +237,7 @@ bottom: 250px;
   .nim-hero-person {
     max-height: 110px;
     margin-right: 160px;
-    top: -37px;
+    top: -68px;
   }
 .nim-hero-ribbon-left {
   text-align: left;
@@ -249,7 +250,7 @@ bottom: 250px;
 }
 
 .nim-hero-ribbon {
-  top: 20px;
+  top: -10px;
   font-size: 16px;
   padding: 26px 20px;
   
@@ -262,7 +263,7 @@ bottom: 250px;
 }
 
 .nim-hero-stem {
- top: -200px;
+ top: -220px;
 }
 
 .nim-hero-ribbon-right {
@@ -276,7 +277,7 @@ bottom: 250px;
   .nim-hero-bottom-card {
     font-size: 16px;
     padding: 16px 40px;
-    top: -130px;
+    top: -150px;
   }
 }
 
