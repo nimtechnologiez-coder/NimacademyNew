@@ -74,7 +74,8 @@ const ContactFollowPage = () => {
 
             <p className="contact-info">
               <i className="bi bi-telephone-fill contact-icon"></i>
-              +91 74188 55308
+              +91 74188 55108
+ 
             </p>
 
             <p className="contact-info">
